@@ -2,7 +2,7 @@
 
 ## Tahap 1 : Menampilkan Form Palsu ##
 ```html
-<br>Username : <input id=username><br>Password : <input type=password id=password><br><button onclick="alert('user:'+document.getElementById('username').value + 'pass : '+document.getElementById('password').value);">Login</button>
+<br>Username : <input id=username><br>Password : <input type=password id=password><br><button type=button onclick="alert('user:'+document.getElementById('username').value + 'pass : '+document.getElementById('password').value);">Login</button>
 ```
 
 ## Tahap 2 : Script untuk submit form ##
