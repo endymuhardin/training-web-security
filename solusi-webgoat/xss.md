@@ -12,8 +12,6 @@ var http = new XMLHttpRequest();
 var params = "PROPERTY=yes&username="+document.getElementById('username').value + "&password="+document.getElementById('password').value;
 http.open("POST", "catcher", true);
 http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-http.setRequestHeader("Content-length", params.length);
-http.setRequestHeader("Connection", "close");
 http.send(params);
 ```
 
